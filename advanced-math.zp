@@ -1,0 +1,10 @@
+(module "advanced-math"
+  (export
+    (list "adder" adder)
+    (list "subtractor" subtractor)
+    (list "multiplicator" multiplicator))
+
+  (mather (lambda (scheme a b) (scheme a b)))
+  (adder (lambda (a b) (mather + a b)))
+  (subtractor (lambda (a b) (mather - a b)))
+  (multiplicator (lambda (a b) (mather * a b))))
